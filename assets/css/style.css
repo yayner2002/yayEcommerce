@@ -138,6 +138,18 @@ body {
     padding-left: 0;
   }
 
+  .nav-below-lists li a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #272a31;
+  }
+
+  .about-contact i a {
+    margin-right: 10px;
+    color: #272a31;
+    font-weight: bold;
+  }
+
   .foot-right ul li a {
     text-decoration: none;
     color: #272a31;
@@ -197,6 +209,19 @@ body {
 
   .product-info p {
     font-size: 13px;
+  }
+
+  .about-log-section p {
+    color: #272a31;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .about-contact p {
+    margin-bottom: 10px;
   }
 
   .services .service-1 p,
@@ -360,6 +385,13 @@ body {
     color: #272a31;
   }
 
+  .about-main .container hr {
+    width: 30px;
+    color: #fa2e18;
+    height: 50%;
+    margin: 10px auto;
+  }
+
   #featured-products hr {
     width: 40px;
     margin: 10px;
@@ -385,174 +417,493 @@ body {
     background-repeat: no-repeat;
     background-size: 30%;
   }
+
+  .more-btn-container {
+    display: none;
+  }
+
+  /* ------start of desktop about page css---------  */
+  .nav-below-header .nav-below-lists {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .nav-below-lists .fa-angle-right {
+    color: #ec5242;
+  }
+
+  .about-main {
+    background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+  }
+
+  .about-main-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .about-main-title h1 {
+    color: #ec5242;
+    font-size: 50px;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .about-main .about-message {
+    width: 80%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 30px auto;
+    line-height: 2em;
+    border: 1px solid darkgrey;
+    opacity: 0.8;
+  }
+
+  .about-main .about-contact {
+    margin: 50px auto;
+    text-align: center;
+    color: #272a31;
+  }
+
+  .about-log-section .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+  }
+
+  .about-log {
+    margin: 50px auto;
+    width: 500px;
+    border: 1px solid darkgray;
+    background-color: #fff;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-log .logo-on-about {
+    width: 250px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 25%;
+  }
+
+  .see-past-sold-itemes .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+  }
+
+  .footer-about {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+  }
+
+  .footer-about .foot-right a {
+    color: #fff;
+  }
+
+  .past-itmes-cards {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .past-itmes-cards .card-1,
+  .past-itmes-cards .card-2 {
+    flex-basis: 40%;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+  }
+
+  .past-itmes-cards .card-1 img,
+  .past-itmes-cards .card-2 img {
+    width: 100%;
+    display: block;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(226, 15, 0, 0.733);
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+  .layer h3 {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5em;
+  }
 }
 
 /* ---------------end of descktop home page css--------- */
 
-/* ------start of desktop about page css---------  */
-.nav-below-header .nav-below-lists {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  list-style: none;
-  margin-top: 20px;
-}
-
-.nav-below-lists li a {
-  text-decoration: none;
-  margin-left: 15px;
-  color: #272a31;
-}
-
-.nav-below-lists .fa-angle-right {
-  color: #ec5242;
-}
-
-.about-main {
-  background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* background-position: left; */
-  min-height: 550px;
-}
-
-.about-main-title {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.about-main-title h1 {
-  color: #ec5242;
-  font-size: 50px;
-  line-height: 1.1em;
-  margin-bottom: 10px;
-}
-
-.about-main .container hr {
-  width: 30px;
-  color: #fa2e18;
-  height: 50%;
-  margin: 10px auto;
-}
-
-.about-main .about-message {
-  width: 80%;
-  background-color: #fff;
-  padding: 15px;
-  margin: 30px auto;
-  line-height: 2em;
-  border: 1px solid darkgrey;
-  opacity: 0.8;
-}
-
-.about-main .about-contact {
-  margin: 50px auto;
-  text-align: center;
-  color: #272a31;
-}
-
-.about-contact i a {
-  margin-right: 10px;
-  color: #272a31;
-  font-weight: bold;
-}
-
-.about-contact p {
-  margin-bottom: 10px;
-}
-
-.about-log-section .title {
-  margin-top: 30px;
-  color: #272a31;
-  margin-bottom: 20px;
-}
-
-.about-log-section p {
-  color: #272a31;
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  margin-top: 0;
-  line-height: 1.5em;
-}
-
-.about-log {
-  margin: 50px auto;
-  width: 500px;
-  border: 1px solid darkgray;
-  background-color: #fff;
-  height: 150px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.about-log .logo-on-about {
-  width: 250px;
-  height: 150px;
-  margin-top: 30px;
-  margin-left: 25%;
-}
-
-.see-past-sold-itemes .title {
-  margin-top: 30px;
-  color: #272a31;
-  margin-bottom: 20px;
-}
-
-.footer-about {
-  background-color: #000;
-  color: #fff;
-  padding: 50px;
-}
-
-.footer-about .foot-right a {
-  color: #fff;
-}
-
-.past-itmes-cards {
-  margin-top: 50px;
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 20px;
-}
-
-.past-itmes-cards .card-1,
-.past-itmes-cards .card-2 {
-  flex-basis: 40%;
-  position: relative;
-  overflow: hidden;
-  height: 250px;
-}
-
-.past-itmes-cards .card-1 img,
-.past-itmes-cards .card-2 img {
-  width: 100%;
-  display: block;
-}
-
-.layer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: rgba(226, 15, 0, 0.733);
-  top: 0;
-  left: 0;
-  background-size: cover;
-}
-
-.layer h3 {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 1.5em;
-}
-
 /* ---------end of desktop about page css---------- */
+
+/* -----mobile---version---css--------------- */
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .nav-bar,
+  .social-login {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    display: block;
+    background: url('../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    z-index: 10000;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .main {
+    /* background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 650px;
+    background-color: #d3d3d3;
+  }
+
+  .main-title {
+    margin-top: 80px;
+    line-height: 2.5rem;
+  }
+
+  .header .nav-bar .navigation.active {
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    background: #ec5242;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    list-style: none;
+  }
+
+  .header .nav-bar .navigation.active li {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .header .nav-bar .navigation.active li:first-child {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .header .nav-bar .navigation.active li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #272a31;
+  }
+
+  .toggle.active {
+    background: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 50px;
+  }
+
+  .nav-bar.active,
+  .social-login.active {
+    display: block;
+  }
+
+  .main-title h1 {
+    font-style: italic;
+    font-size: 35px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #ec5242, red);
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-title h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 4.3rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 15px;
+  }
+
+  .main-description {
+    border: 5px solid gainsboro;
+    margin-top: 35px;
+    padding: 25px;
+    width: 100%;
+    line-height: 1.7rem;
+    color: #272a31;
+  }
+
+  .main-description p {
+    font-size: 25px;
+    line-height: 2em;
+    width: 100%;
+  }
+
+  .main-address {
+    margin-top: 30px;
+    line-height: 3em;
+  }
+
+  .main-address p {
+    color: #272a31;
+    font-size: 22px;
+    margin-bottom: 20%;
+  }
+
+  .main-address h3 {
+    font-weight: 800;
+    color: #272a31;
+    font-size: 40px;
+  }
+
+  .main-services {
+    background: #272a31;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .main-services h3 {
+    padding-top: 30px;
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    line-height: 60px;
+    text-align: center;
+    color: #d3d3d3;
+    position: relative;
+    margin: 0 auto 80px;
+  }
+
+  .title::after {
+    background: #ec5242;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border-radius: 15px;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+  }
+
+  .services img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  .services .service-1,
+  .services .service-2,
+  .services .service-3,
+  .services .service-4,
+  .services .service-5 {
+    text-align: center;
+    background: #4646475b;
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-services .container {
+    width: 92%;
+    margin: auto;
+  }
+
+  .product-info p {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  .services .service-1 p,
+  .services .service-2 p,
+  .services .service-3 p,
+  .services .service-4 p,
+  .services .service-5 p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    line-height: 1.5em;
+    width: 100%;
+  }
+
+  .services h3 {
+    color: #ec5242;
+    width: 50%;
+    margin: 25px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .main-services .see-whole-products {
+    border: none;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #fa2e18;
+    padding: 60px;
+    width: 80%;
+  }
+
+  #featured-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .featured-products .title {
+    color: #272a31;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  #featured-products hr {
+    width: 40px;
+    margin: 20px;
+  }
+
+  #featured-products .position {
+    color: #ec5242;
+    font-size: 25px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .flex-div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  .flex-div img {
+    width: 260px;
+    height: 270px;
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+
+  .flex-div .flex-images {
+    background-image: url('../images/bgforimages2.png');
+    background-position: top 1% left 2%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+
+  .product-info h3 {
+    color: #272a31;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
+  .product-info {
+    margin-left: 30px;
+  }
+
+  .featured-products .container {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .more-btn-container {
+    padding: 25px;
+    background-color: #fff;
+    border: 2px solid darkgray;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .more-btn-container .fa {
+    font-size: 60px;
+    color: #fa2e18;
+    margin-left: 20px;
+  }
+
+  .more-btn-container .show-more-text {
+    font-size: 25px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  #featured-products.show-hide .read-more {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+}
