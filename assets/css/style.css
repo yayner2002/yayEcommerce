@@ -1,0 +1,558 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Sora', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .brandsLogo {
+    margin: 40px auto;
+    background: #272a31;
+    min-width: 100%;
+    height: 250px;
+  }
+
+  footer .container {
+    display: flex;
+    align-content: center;
+    height: 150px;
+  }
+
+  .brandsLogo .container {
+    height: 250px;
+  }
+
+  .brandsLogo .col-5 {
+    width: 160px;
+  }
+
+  .prodContainer {
+    width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .prodContainer .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  .services img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .foot-left img {
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .flex-div img {
+    width: 150px;
+    height: 120px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .col-5 img:hover {
+    filter: grayscale(0);
+  }
+
+  .prodContainer h3 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    line-height: 60px;
+    text-align: center;
+    color: #d3d3d3;
+    position: relative;
+    margin: 0 auto 80px;
+  }
+
+  .title::after {
+    background: #ec5242;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border-radius: 15px;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+  }
+
+  .main-services {
+    background: #272a31;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .main-services .see-whole-products {
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .foot-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .foot-right ul li a {
+    text-decoration: none;
+    color: #272a31;
+    margin-left: 20px;
+  }
+
+  .social-login .socila-login-items li {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+
+  .foot-right ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .foot-right ul #privacy {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .foot-right {
+    padding-top: 30px;
+  }
+
+  .foot-right h4 {
+    margin-bottom: 10px;
+  }
+
+  .foot-left {
+    padding-bottom: 100px;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    column-gap: 5px;
+  }
+
+  .services .service-1,
+  .services .service-2,
+  .services .service-3,
+  .services .service-4,
+  .services .service-5 {
+    text-align: center;
+    background: #6062645b;
+    padding: 25px;
+  }
+
+  .main-address p {
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .product-info p {
+    font-size: 13px;
+  }
+
+  .services .service-1 p,
+  .services .service-2 p,
+  .services .service-3 p,
+  .services .service-4 p,
+  .services .service-5 p {
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .services h3 {
+    color: #ec5242;
+  }
+
+  .main-services h3 {
+    padding-top: 30px;
+  }
+
+  .social-login {
+    background-color: #272a31;
+    height: 30px;
+    padding-top: 3px;
+  }
+
+  .social-login .socila-login-items {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+  }
+
+  .social-login .socila-login-items a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-bar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 80px;
+  }
+
+  .nav-bar .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+  }
+
+  .nav-bar .logo {
+    width: 150px;
+    height: 120px;
+    margin-left: 0;
+  }
+
+  .nav-bar .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 35px;
+    list-style: none;
+  }
+
+  .nav-bar .navigation a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .nav-bar .navigation .home {
+    color: #ec5242;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .nav-bar .navigation li:last-child {
+    border: 3px solid #ec5242;
+    padding: 8px;
+  }
+
+  .nav-bar .navigation .contact {
+    color: #ec5242;
+  }
+
+  .main {
+    background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    background-position: top;
+  }
+
+  .main-title {
+    margin-top: 80px;
+    line-height: 4rem;
+  }
+
+  .main-title h1 {
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #ec5242, red);
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-title h2 {
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 5rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-description {
+    border: 5px solid gainsboro;
+    margin-top: 10px;
+    padding: 15px;
+    width: 50%;
+    line-height: 1.7rem;
+    color: #272a31;
+  }
+
+  .main-address {
+    margin-top: 30px;
+    line-height: 3em;
+  }
+
+  .main-address h3 {
+    font-weight: 800;
+    color: #272a31;
+    font-size: 30px;
+  }
+
+  .flex-div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  #featured-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .featured-products .title {
+    color: #272a31;
+  }
+
+  #featured-products hr {
+    width: 40px;
+    margin: 10px;
+  }
+
+  #featured-products .position {
+    color: #ec5242;
+  }
+
+  .product-info h3 {
+    color: #272a31;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .product-info {
+    margin-left: 20px;
+  }
+
+  .flex-div .flex-images {
+    background-image: url('../images/bgforimages.png');
+    background-position: top 1% left 1%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+}
+
+/* ---------------end of descktop home page css--------- */
+
+/* ------start of desktop about page css---------  */
+.nav-below-header .nav-below-lists {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-below-lists li a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #272a31;
+}
+
+.nav-below-lists .fa-angle-right {
+  color: #ec5242;
+}
+
+.about-main {
+  background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: left; */
+  min-height: 550px;
+}
+
+.about-main-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-main-title h1 {
+  color: #ec5242;
+  font-size: 50px;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+
+.about-main .container hr {
+  width: 30px;
+  color: #fa2e18;
+  height: 50%;
+  margin: 10px auto;
+}
+
+.about-main .about-message {
+  width: 80%;
+  background-color: #fff;
+  padding: 15px;
+  margin: 30px auto;
+  line-height: 2em;
+  border: 1px solid darkgrey;
+  opacity: 0.8;
+}
+
+.about-main .about-contact {
+  margin: 50px auto;
+  text-align: center;
+  color: #272a31;
+}
+
+.about-contact i a {
+  margin-right: 10px;
+  color: #272a31;
+  font-weight: bold;
+}
+
+.about-contact p {
+  margin-bottom: 10px;
+}
+
+.about-log-section .title {
+  margin-top: 30px;
+  color: #272a31;
+  margin-bottom: 20px;
+}
+
+.about-log-section p {
+  color: #272a31;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.about-log {
+  margin: 50px auto;
+  width: 500px;
+  border: 1px solid darkgray;
+  background-color: #fff;
+  height: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-log .logo-on-about {
+  width: 250px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 25%;
+}
+
+.see-past-sold-itemes .title {
+  margin-top: 30px;
+  color: #272a31;
+  margin-bottom: 20px;
+}
+
+.footer-about {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer-about .foot-right a {
+  color: #fff;
+}
+
+.past-itmes-cards {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.past-itmes-cards .card-1,
+.past-itmes-cards .card-2 {
+  flex-basis: 40%;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.past-itmes-cards .card-1 img,
+.past-itmes-cards .card-2 img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(226, 15, 0, 0.733);
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.layer h3 {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+/* ---------end of desktop about page css---------- */
