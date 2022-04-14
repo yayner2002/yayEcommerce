@@ -82,7 +82,6 @@ const featuredProduct = document.querySelector('#featured-products');
 const showMoreText = document.querySelector('.show-more-text');
 const fontAwsomeDownIcon = document.getElementsByClassName('fa-angle-down');
 const arrowDownUp = document.querySelector('.arrow-down-up');
-window.console.log(fontAwsomeDownIcon.length);
 readMore.addEventListener('click', () => {
   featuredProduct.classList.toggle('show-hide');
   if (showMoreText.textContent === 'SHOW MORE' && fontAwsomeDownIcon.length === 1) {

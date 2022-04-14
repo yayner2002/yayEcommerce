@@ -21,6 +21,13 @@ body {
     overflow: hidden;
   }
 
+  .header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+  }
+
   .brandsLogo {
     margin: 40px auto;
     background: #272a31;
@@ -32,6 +39,10 @@ body {
     display: flex;
     align-content: center;
     height: 150px;
+  }
+
+  .foot-about-mobile {
+    display: none;
   }
 
   .brandsLogo .container {
@@ -70,9 +81,10 @@ body {
   }
 
   .foot-left img {
-    width: 250px;
-    height: 150px;
+    width: 230px;
+    height: 130px;
     margin-top: 20px;
+    cursor: pointer;
   }
 
   .flex-div img {
@@ -129,6 +141,7 @@ body {
     margin-left: 40%;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
   }
 
   .foot-right ul {
@@ -167,7 +180,7 @@ body {
     margin-right: 0;
   }
 
-  .foot-right ul #privacy {
+  .foot-right ul .privacy {
     padding-left: 0;
     margin-left: 0;
   }
@@ -273,9 +286,8 @@ body {
   }
 
   .nav-bar .logo {
-    width: 150px;
-    height: 120px;
-    margin-left: 0;
+    width: 180px;
+    height: 130px;
   }
 
   .nav-bar .navigation {
@@ -313,12 +325,12 @@ body {
     background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 650px;
+    min-height: 770px;
     background-position: top;
   }
 
   .main-title {
-    margin-top: 80px;
+    margin-top: 200px;
     line-height: 4rem;
   }
 
@@ -428,7 +440,7 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 125px;
   }
 
   .nav-below-lists .fa-angle-right {
@@ -439,7 +451,7 @@ body {
     background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 550px;
+    min-height: 750px;
   }
 
   .about-main-title {
@@ -501,7 +513,7 @@ body {
   .footer-about {
     background-color: #000;
     color: #fff;
-    padding: 50px;
+    padding: 25px;
   }
 
   .footer-about .foot-right a {
@@ -553,6 +565,15 @@ body {
     text-align: center;
     line-height: 1.5em;
   }
+
+  .about-main-mobile-title {
+    display: none;
+  }
+
+  .about-partners,
+  .about-brandsLogo {
+    display: none;
+  }
 }
 
 /* ---------------end of descktop home page css--------- */
@@ -586,6 +607,20 @@ body {
     cursor: pointer;
   }
 
+  .menu {
+    position: relative;
+    display: block;
+    background: url('../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    z-index: 10000;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
   .main {
     /* background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg'); */
     background-size: cover;
@@ -598,6 +633,18 @@ body {
   .main-title {
     margin-top: 80px;
     line-height: 2.5rem;
+  }
+
+  .about-contact i a {
+    margin-right: 10px;
+    color: #272a31;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .about-contact .fa-angle-right {
+    display: none;
   }
 
   .header .nav-bar .navigation.active {
@@ -615,9 +662,42 @@ body {
     list-style: none;
   }
 
+  .header .nav-bar .navigation.show {
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    background: #ec5242;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    list-style: none;
+  }
+
+  .foot-right ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
   .header .nav-bar .navigation.active li {
     margin-bottom: 30px;
     margin-left: 50px;
+  }
+
+  .header .nav-bar .navigation.show li {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .foot-right ul li a {
+    text-decoration: none;
+    color: #272a31;
+    margin-left: 15px;
+    font-size: 15px;
   }
 
   .header .nav-bar .navigation.active li:first-child {
@@ -626,7 +706,19 @@ body {
     margin-right: 10px;
   }
 
+  .header .nav-bar .navigation.show li:first-child {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
   .header .nav-bar .navigation.active li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #272a31;
+  }
+
+  .header .nav-bar .navigation.show li a {
     text-decoration: none;
     font-size: 35px;
     color: #272a31;
@@ -642,8 +734,23 @@ body {
     left: 50px;
   }
 
+  .menu.show {
+    background: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 50px;
+  }
+
   .nav-bar.active,
   .social-login.active {
+    display: block;
+  }
+
+  .nav-bar.show,
+  .social-login.show {
     display: block;
   }
 
@@ -695,7 +802,7 @@ body {
 
   .main-address p {
     color: #272a31;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20%;
   }
 
@@ -772,6 +879,31 @@ body {
     line-height: 1.5em;
   }
 
+  .about-main-mobile-title p {
+    display: block;
+  }
+
+  .about-log-section p {
+    color: #272a31;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    line-height: 1.6em;
+    font-size: 20px;
+  }
+
+  .about-contact p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+
+  .see-past-sold-itemes p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
   .services .service-1 p,
   .services .service-2 p,
   .services .service-3 p,
@@ -835,7 +967,7 @@ body {
     display: none;
   }
 
-  footer {
+  .footer-home-mobile {
     display: none;
   }
 
@@ -885,6 +1017,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
   }
 
   .more-btn-container .fa {
@@ -905,5 +1038,247 @@ body {
     display: flex;
     align-items: center;
     align-items: flex-start;
+  }
+
+  /* -----about mobile version css----- */
+  .nav-below-header {
+    display: none;
+  }
+
+  .about-main {
+    /* background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 650px;
+    background-color: #d3d3d3;
+  }
+
+  .about-main-mobile-title {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #fa2e18;
+  }
+
+  .about-main-title {
+    margin-top: 10px;
+  }
+
+  .about-main-title h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 2.6rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 100%;
+  }
+
+  .about-main .title {
+    display: none;
+  }
+
+  .about-message {
+    border: 5px solid gainsboro;
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    line-height: 2rem;
+    color: #272a31;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+
+  .about-contact {
+    margin-top: 30px;
+    line-height: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-log-section .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 15px;
+
+    /* letter-spacing: 0.15em; */
+  }
+
+  .about-log-section .container {
+    width: 70%;
+  }
+
+  .container-log {
+    width: 85%;
+    margin: auto;
+  }
+
+  .about-log {
+    margin: 60px auto;
+    width: 100%;
+    border: 1px solid darkgray;
+    background-color: #fff;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-log .logo-on-about {
+    width: 290px;
+    height: 220px;
+    margin-top: 60px;
+    margin-left: 30%;
+  }
+
+  .see-past-sold-itemes .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .past-itmes-cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .past-itmes-cards .card-1,
+  .past-itmes-cards .card-2 {
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  .foot-left img {
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+  .past-itmes-cards .card-1 img,
+  .past-itmes-cards .card-2 img {
+    width: 100%;
+    display: block;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(226, 15, 0, 0.733);
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+  .layer h3 {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 25px;
+  }
+
+  .partners .brandsLogo {
+    display: block;
+  }
+
+  .prodContainer .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .prodContainer .container .row-2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-brandsLogo {
+    margin: 30px auto;
+    background: #272a31;
+    min-width: 100%;
+    height: 290px;
+  }
+
+  .prodContainer .title {
+    font-size: 25px;
+    padding-top: 25px;
+  }
+
+  .brandsLogo .col-5 {
+    width: 160px;
+  }
+
+  .col-5 img:hover {
+    filter: grayscale(0);
+  }
+
+  .foot-about-mobile .container {
+    display: flex;
+    align-content: center;
+    height: 150px;
+  }
+
+  .foot-left {
+    padding-bottom: 100px;
+  }
+
+  .foot-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .foot-right ul .privacy {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .foot-right {
+    padding-top: 30px;
+  }
+
+  .foot-right h4 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  .about-partners .prodContainer .title {
+    margin-bottom: 10px;
+  }
+
+  .footer-about {
+    display: none;
   }
 }
