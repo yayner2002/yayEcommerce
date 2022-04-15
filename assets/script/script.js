@@ -4,42 +4,42 @@ const featuredProducts = [
     postion: 'Red Printed T-shirt',
     imagePath: '../assets/images/buy-1.jpg',
     description:
-      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
   {
     name: 'Men Shoes',
     postion: 'Best Seling Shoes',
     imagePath: '../assets/images/buy-2.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingadipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
   {
     name: 'Men Pants',
     postion: 'Mens Sport Pants',
     imagePath: '../assets/images/buy-3.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicingelit Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
   {
     name: 'Girl Clothes',
     postion: 'Swag Girl Shirt',
     imagePath: '../assets/images/ethGirl.png',
     description:
-      'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingadipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
   {
     name: 'Cultural Dress',
     postion: 'Habesha Dress Printed',
     imagePath: '../assets/images/loveeth.png',
     description:
-      'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingadipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
   {
     name: 'Fashion Jeans',
     postion: 'Men Fashion Jeans',
     imagePath: '../assets/images/category-1.jpg',
     description:
-      'Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur adipisicing adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur.',
   },
 ];
 

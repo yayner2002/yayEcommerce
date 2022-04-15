@@ -81,7 +81,7 @@ body {
   }
 
   .foot-left img {
-    width: 230px;
+    width: 200px;
     height: 130px;
     margin-top: 20px;
     cursor: pointer;
@@ -147,7 +147,8 @@ body {
   .foot-right ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     padding-left: 0;
   }
 
@@ -187,6 +188,7 @@ body {
 
   .foot-right {
     padding-top: 30px;
+    flex: 2;
   }
 
   .foot-right h4 {
@@ -195,6 +197,7 @@ body {
 
   .foot-left {
     padding-bottom: 100px;
+    flex: 1;
   }
 
   .services {
@@ -334,6 +337,11 @@ body {
     line-height: 4rem;
   }
 
+  #privacy {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   .main-title h1 {
     font-style: italic;
     font-size: 30px;
@@ -406,7 +414,7 @@ body {
 
   #featured-products hr {
     width: 40px;
-    margin: 10px;
+    margin: 18px;
   }
 
   #featured-products .position {
@@ -588,9 +596,30 @@ body {
     overflow: hidden;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
   .nav-bar,
   .social-login {
     display: none;
+  }
+
+  .title {
+    line-height: 60px;
+    text-align: center;
+    color: #d3d3d3;
+    position: relative;
+    margin: 0 auto 80px;
+  }
+
+  .main-services .title {
+    margin-bottom: 45px;
   }
 
   .toggle {
@@ -598,7 +627,7 @@ body {
     display: block;
     background: url('../images/menu.png');
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 35px;
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
@@ -612,7 +641,7 @@ body {
     display: block;
     background: url('../images/menu.png');
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 35px;
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
@@ -626,12 +655,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 650px;
+    height: 650px;
     background-color: #d3d3d3;
   }
 
   .main-title {
-    margin-top: 80px;
+    margin-top: 20px;
     line-height: 2.5rem;
   }
 
@@ -696,18 +725,17 @@ body {
   .foot-right ul li a {
     text-decoration: none;
     color: #272a31;
-    margin-left: 15px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .header .nav-bar .navigation.active li:first-child {
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 120px;
+    margin-bottom: 25px;
     margin-right: 10px;
   }
 
   .header .nav-bar .navigation.show li:first-child {
-    margin-top: 150px;
+    margin-top: 120px;
     margin-bottom: 20px;
     margin-right: 10px;
   }
@@ -727,21 +755,21 @@ body {
   .toggle.active {
     background: url('../images/close.png');
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 35px;
     cursor: pointer;
     position: fixed;
     top: 0;
-    left: 50px;
+    left: 6%;
   }
 
   .menu.show {
     background: url('../images/close.png');
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 35px;
     cursor: pointer;
     position: fixed;
     top: 0;
-    left: 50px;
+    left: 6%;
   }
 
   .nav-bar.active,
@@ -756,8 +784,7 @@ body {
 
   .main-title h1 {
     font-style: italic;
-    font-size: 35px;
-    letter-spacing: 0.05em;
+    font-size: 20px;
     font-weight: normal;
     background-image: linear-gradient(to right, #ec5242, red);
     background-size: cover;
@@ -769,8 +796,8 @@ body {
 
   .main-title h2 {
     text-transform: uppercase;
-    font-size: 60px;
-    line-height: 4.3rem;
+    font-size: 30px;
+    line-height: 2rem;
     background-image: url('../images/pexels-pixabay-73873.jpg');
     background-size: cover;
     /* stylelint-disable-next-line csstree/validator */
@@ -783,15 +810,15 @@ body {
   .main-description {
     border: 5px solid gainsboro;
     margin-top: 35px;
-    padding: 25px;
+    padding: 10px;
     width: 100%;
-    line-height: 1.7rem;
+    line-height: 1.3rem;
     color: #272a31;
   }
 
   .main-description p {
-    font-size: 25px;
-    line-height: 2em;
+    font-size: 18px;
+    line-height: 1.7rem;
     width: 100%;
   }
 
@@ -802,34 +829,26 @@ body {
 
   .main-address p {
     color: #272a31;
-    font-size: 20px;
+    font-size: 11px;
     margin-bottom: 20%;
   }
 
   .main-address h3 {
     font-weight: 800;
     color: #272a31;
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .main-services {
     background: #272a31;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
   }
 
   .main-services h3 {
     padding-top: 30px;
     font-size: 35px;
     padding-bottom: 10px;
-  }
-
-  .title {
-    line-height: 60px;
-    text-align: center;
-    color: #d3d3d3;
-    position: relative;
-    margin: 0 auto 80px;
   }
 
   .title::after {
@@ -845,8 +864,8 @@ body {
   }
 
   .services img {
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 50px;
   }
 
   .services {
@@ -862,7 +881,7 @@ body {
   .services .service-5 {
     text-align: center;
     background: #4646475b;
-    padding: 25px;
+    padding: 20px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -875,7 +894,7 @@ body {
   }
 
   .product-info p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5em;
   }
 
@@ -895,7 +914,7 @@ body {
   .about-contact p {
     margin-bottom: 10px;
     line-height: 1.5em;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .see-past-sold-itemes p {
@@ -911,7 +930,7 @@ body {
   .services .service-5 p {
     margin-top: 15px;
     color: #fff;
-    font-size: 25px;
+    font-size: 15px;
     text-align: left;
     line-height: 1.5em;
     width: 100%;
@@ -920,21 +939,21 @@ body {
   .services h3 {
     color: #ec5242;
     width: 50%;
-    margin: 25px;
-    font-size: 30px;
-    text-align: left;
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
   }
 
   .main-services .see-whole-products {
     border: none;
     color: #fff;
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
     margin-left: 10%;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 20px;
     background-color: #fa2e18;
-    padding: 60px;
+    padding: 20px;
     width: 80%;
   }
 
@@ -948,19 +967,19 @@ body {
 
   .featured-products .title {
     color: #272a31;
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
 
   #featured-products hr {
     width: 40px;
-    margin: 20px;
+    margin: 5px;
   }
 
   #featured-products .position {
     color: #ec5242;
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .partners {
@@ -978,28 +997,28 @@ body {
   }
 
   .flex-div img {
-    width: 260px;
-    height: 270px;
-    margin-left: 25px;
-    margin-top: 25px;
+    width: 120px;
+    height: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
   .flex-div .flex-images {
     background-image: url('../images/bgforimages2.png');
     background-position: top 1% left 2%;
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: 20%;
   }
 
   .product-info h3 {
     color: #272a31;
     font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 30px;
+    margin-bottom: 5px;
+    font-size: 20px;
   }
 
   .product-info {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .featured-products .container {
@@ -1009,7 +1028,6 @@ body {
   }
 
   .more-btn-container {
-    padding: 25px;
     background-color: #fff;
     border: 2px solid darkgray;
     width: 100%;
@@ -1017,7 +1035,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .more-btn-container .fa {
@@ -1027,7 +1045,7 @@ body {
   }
 
   .more-btn-container .show-more-text {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .read-more {
@@ -1058,7 +1076,7 @@ body {
     display: block;
     margin-top: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #fa2e18;
   }
 
@@ -1067,9 +1085,9 @@ body {
   }
 
   .about-main-title h1 {
-    font-size: 40px;
+    font-size: 22px;
     text-transform: uppercase;
-    line-height: 2.6rem;
+    line-height: 2rem;
     background-image: url('../images/pexels-pixabay-73873.jpg');
     background-size: cover;
     /* stylelint-disable-next-line csstree/validator */
@@ -1086,18 +1104,18 @@ body {
   .about-message {
     border: 5px solid gainsboro;
     margin-top: 50px;
-    padding: 30px;
+    padding: 20px 10px;
     width: 100%;
-    line-height: 2rem;
+    line-height: 1.8rem;
     color: #272a31;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.87);
   }
 
   .about-contact {
     margin-top: 30px;
-    line-height: 3em;
+    line-height: 1.5em;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -1106,16 +1124,14 @@ body {
     margin-top: 30px;
     color: #272a31;
     margin-bottom: 25px;
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     line-height: 1.5em;
     padding: 15px;
-
-    /* letter-spacing: 0.15em; */
   }
 
   .about-log-section .container {
-    width: 70%;
+    width: 80%;
   }
 
   .container-log {
@@ -1130,13 +1146,16 @@ body {
     background-color: #fff;
     height: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
   }
 
   .about-log .logo-on-about {
-    width: 290px;
-    height: 220px;
-    margin-top: 60px;
-    margin-left: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .see-past-sold-itemes .title {
@@ -1144,6 +1163,8 @@ body {
     color: #272a31;
     margin-bottom: 20px;
     font-size: 20px;
+    line-height: 28px;
+    padding: 10px;
   }
 
   .past-itmes-cards {
@@ -1171,9 +1192,10 @@ body {
   }
 
   .foot-left img {
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
+    width: 150px;
+    height: 120px;
+
+    /* margin-top: 20px; */
   }
 
   .past-itmes-cards .card-1 img,
@@ -1201,7 +1223,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     line-height: 1.5em;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .partners .brandsLogo {
@@ -1210,9 +1232,9 @@ body {
 
   .prodContainer .container .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   .prodContainer .container .row-2 {
@@ -1223,19 +1245,20 @@ body {
   }
 
   .about-brandsLogo {
-    margin: 30px auto;
+    margin-bottom: 35px;
     background: #272a31;
     min-width: 100%;
-    height: 290px;
+    height: 300px;
   }
 
   .prodContainer .title {
     font-size: 25px;
     padding-top: 25px;
+    margin-left: 50px;
   }
 
   .brandsLogo .col-5 {
-    width: 160px;
+    width: 150px;
   }
 
   .col-5 img:hover {
@@ -1245,18 +1268,24 @@ body {
   .foot-about-mobile .container {
     display: flex;
     align-content: center;
+    justify-content: space-between;
     height: 150px;
+    width: 85%;
   }
 
   .foot-left {
     padding-bottom: 100px;
+    flex: 1;
   }
 
   .foot-right ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-left: 0;
+    align-items: center;
+    width: 100%;
   }
 
   .foot-right ul .privacy {
@@ -1265,13 +1294,14 @@ body {
   }
 
   .foot-right {
-    padding-top: 30px;
+    flex: 2;
   }
 
   .foot-right h4 {
-    margin-bottom: 10px;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 10px;
+    width: 100%;
+    line-height: 2em;
   }
 
   .about-partners .prodContainer .title {
