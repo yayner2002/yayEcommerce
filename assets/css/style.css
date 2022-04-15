@@ -28,17 +28,22 @@ body {
     z-index: 10;
   }
 
+  footer .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .footer-about .container {
+    min-height: 150px;
+  }
+
   .brandsLogo {
     margin: 40px auto;
     background: #272a31;
     min-width: 100%;
     height: 250px;
-  }
-
-  footer .container {
-    display: flex;
-    align-content: center;
-    height: 150px;
   }
 
   .foot-about-mobile {
@@ -189,6 +194,7 @@ body {
   .foot-right {
     padding-top: 30px;
     flex: 2;
+    flex-basis: 75%;
   }
 
   .foot-right h4 {
@@ -196,7 +202,6 @@ body {
   }
 
   .foot-left {
-    padding-bottom: 100px;
     flex: 1;
   }
 
@@ -403,6 +408,7 @@ body {
 
   .featured-products .title {
     color: #272a31;
+    padding-top: 15px;
   }
 
   .about-main .container hr {
@@ -655,20 +661,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 650px;
+    min-height: 550px;
     background-color: #d3d3d3;
   }
 
   .main-title {
     margin-top: 20px;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
 
   .about-contact i a {
     margin-right: 10px;
     color: #272a31;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 13px;
     text-align: center;
   }
 
@@ -725,7 +731,7 @@ body {
   .foot-right ul li a {
     text-decoration: none;
     color: #272a31;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .header .nav-bar .navigation.active li:first-child {
@@ -796,7 +802,7 @@ body {
 
   .main-title h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2rem;
     background-image: url('../images/pexels-pixabay-73873.jpg');
     background-size: cover;
@@ -824,19 +830,19 @@ body {
 
   .main-address {
     margin-top: 30px;
-    line-height: 3em;
+    line-height: 1.5em;
   }
 
   .main-address p {
     color: #272a31;
-    font-size: 11px;
-    margin-bottom: 20%;
+    font-size: 12px;
+    margin-bottom: 15%;
   }
 
   .main-address h3 {
-    font-weight: 800;
+    font-weight: 700;
     color: #272a31;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .main-services {
@@ -970,6 +976,7 @@ body {
     font-size: 30px;
     padding-top: 30px;
     padding-bottom: 20px;
+    line-height: 1.5em;
   }
 
   #featured-products hr {
@@ -1068,7 +1075,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 650px;
+    min-height: 600px;
     background-color: #d3d3d3;
   }
 
@@ -1192,10 +1199,8 @@ body {
   }
 
   .foot-left img {
-    width: 150px;
-    height: 120px;
-
-    /* margin-top: 20px; */
+    width: 105px;
+    height: 90px;
   }
 
   .past-itmes-cards .card-1 img,
@@ -1273,9 +1278,14 @@ body {
     width: 85%;
   }
 
+  .foot-about-mobile {
+    min-height: 160px;
+  }
+
   .foot-left {
     padding-bottom: 100px;
     flex: 1;
+    flex-basis: 25%;
   }
 
   .foot-right ul {
@@ -1295,6 +1305,8 @@ body {
 
   .foot-right {
     flex: 2;
+    margin-top: 10px;
+    flex-basis: 75%;
   }
 
   .foot-right h4 {
