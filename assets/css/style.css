@@ -1,0 +1,1326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Sora', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  footer .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .footer-about .container {
+    min-height: 150px;
+  }
+
+  .brandsLogo {
+    margin: 40px auto;
+    background: #272a31;
+    min-width: 100%;
+    height: 250px;
+  }
+
+  .foot-about-mobile {
+    display: none;
+  }
+
+  .brandsLogo .container {
+    height: 250px;
+  }
+
+  .brandsLogo .col-5 {
+    width: 160px;
+  }
+
+  .prodContainer {
+    width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .prodContainer .container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  .services img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .foot-left img {
+    width: 200px;
+    height: 130px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .flex-div img {
+    width: 150px;
+    height: 120px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .col-5 img:hover {
+    filter: grayscale(0);
+  }
+
+  .prodContainer h3 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    line-height: 60px;
+    text-align: center;
+    color: #d3d3d3;
+    position: relative;
+    margin: 0 auto 80px;
+  }
+
+  .title::after {
+    background: #ec5242;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border-radius: 15px;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+  }
+
+  .main-services {
+    background: #272a31;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+
+  .main-services .see-whole-products {
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .foot-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .nav-below-lists li a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #272a31;
+  }
+
+  .about-contact i a {
+    margin-right: 10px;
+    color: #272a31;
+    font-weight: bold;
+  }
+
+  .foot-right ul li a {
+    text-decoration: none;
+    color: #272a31;
+    margin-left: 20px;
+  }
+
+  .social-login .socila-login-items li {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+
+  .foot-right ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .foot-right ul .privacy {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .foot-right {
+    padding-top: 30px;
+    flex: 2;
+    flex-basis: 75%;
+  }
+
+  .foot-right h4 {
+    margin-bottom: 10px;
+  }
+
+  .foot-left {
+    flex: 1;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    column-gap: 5px;
+  }
+
+  .services .service-1,
+  .services .service-2,
+  .services .service-3,
+  .services .service-4,
+  .services .service-5 {
+    text-align: center;
+    background: #6062645b;
+    padding: 25px;
+  }
+
+  .main-address p {
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .product-info p {
+    font-size: 13px;
+  }
+
+  .about-log-section p {
+    color: #272a31;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .about-contact p {
+    margin-bottom: 10px;
+  }
+
+  .services .service-1 p,
+  .services .service-2 p,
+  .services .service-3 p,
+  .services .service-4 p,
+  .services .service-5 p {
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .services h3 {
+    color: #ec5242;
+  }
+
+  .main-services h3 {
+    padding-top: 30px;
+  }
+
+  .social-login {
+    background-color: #272a31;
+    height: 30px;
+    padding-top: 3px;
+  }
+
+  .social-login .socila-login-items {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+  }
+
+  .social-login .socila-login-items a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-bar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 80px;
+  }
+
+  .nav-bar .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+  }
+
+  .nav-bar .logo {
+    width: 180px;
+    height: 130px;
+  }
+
+  .nav-bar .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 35px;
+    list-style: none;
+  }
+
+  .nav-bar .navigation a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .nav-bar .navigation .home {
+    color: #ec5242;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .nav-bar .navigation li:last-child {
+    border: 3px solid #ec5242;
+    padding: 8px;
+  }
+
+  .nav-bar .navigation .contact {
+    color: #ec5242;
+  }
+
+  .main {
+    background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 770px;
+    background-position: top;
+  }
+
+  .main-title {
+    margin-top: 200px;
+    line-height: 4rem;
+  }
+
+  #privacy {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .main-title h1 {
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #ec5242, red);
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-title h2 {
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 5rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-description {
+    border: 5px solid gainsboro;
+    margin-top: 10px;
+    padding: 15px;
+    width: 50%;
+    line-height: 1.7rem;
+    color: #272a31;
+  }
+
+  .main-address {
+    margin-top: 30px;
+    line-height: 3em;
+  }
+
+  .main-address h3 {
+    font-weight: 800;
+    color: #272a31;
+    font-size: 30px;
+  }
+
+  .flex-div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  #featured-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .featured-products .title {
+    color: #272a31;
+    padding-top: 15px;
+  }
+
+  .about-main .container hr {
+    width: 30px;
+    color: #fa2e18;
+    height: 50%;
+    margin: 10px auto;
+  }
+
+  #featured-products hr {
+    width: 40px;
+    margin: 18px;
+  }
+
+  #featured-products .position {
+    color: #ec5242;
+  }
+
+  .product-info h3 {
+    color: #272a31;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .product-info {
+    margin-left: 20px;
+  }
+
+  .flex-div .flex-images {
+    background-image: url('../images/bgforimages.png');
+    background-position: top 1% left 1%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+
+  .more-btn-container {
+    display: none;
+  }
+
+  /* ------start of desktop about page css---------  */
+  .nav-below-header .nav-below-lists {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 125px;
+  }
+
+  .nav-below-lists .fa-angle-right {
+    color: #ec5242;
+  }
+
+  .about-main {
+    background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+  }
+
+  .about-main-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .about-main-title h1 {
+    color: #ec5242;
+    font-size: 50px;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .about-main .about-message {
+    width: 80%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 30px auto;
+    line-height: 2em;
+    border: 1px solid darkgrey;
+    opacity: 0.8;
+  }
+
+  .about-main .about-contact {
+    margin: 50px auto;
+    text-align: center;
+    color: #272a31;
+  }
+
+  .about-log-section .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+  }
+
+  .about-log {
+    margin: 50px auto;
+    width: 500px;
+    border: 1px solid darkgray;
+    background-color: #fff;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-log .logo-on-about {
+    width: 250px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 25%;
+  }
+
+  .see-past-sold-itemes .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+  }
+
+  .footer-about {
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+  }
+
+  .footer-about .foot-right a {
+    color: #fff;
+  }
+
+  .past-itmes-cards {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .past-itmes-cards .card-1,
+  .past-itmes-cards .card-2 {
+    flex-basis: 40%;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+  }
+
+  .past-itmes-cards .card-1 img,
+  .past-itmes-cards .card-2 img {
+    width: 100%;
+    display: block;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(226, 15, 0, 0.733);
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+  .layer h3 {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .about-main-mobile-title {
+    display: none;
+  }
+
+  .about-partners,
+  .about-brandsLogo {
+    display: none;
+  }
+}
+
+/* ---------------end of descktop home page css--------- */
+
+/* ---------end of desktop about page css---------- */
+
+/* -----mobile---version---css--------------- */
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .nav-bar,
+  .social-login {
+    display: none;
+  }
+
+  .title {
+    line-height: 60px;
+    text-align: center;
+    color: #d3d3d3;
+    position: relative;
+    margin: 0 auto 80px;
+  }
+
+  .main-services .title {
+    margin-bottom: 45px;
+  }
+
+  .toggle {
+    position: relative;
+    display: block;
+    background: url('../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    z-index: 10000;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: relative;
+    display: block;
+    background: url('../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    z-index: 10000;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .main {
+    /* background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 550px;
+    background-color: #d3d3d3;
+  }
+
+  .main-title {
+    margin-top: 20px;
+    line-height: 1.5rem;
+  }
+
+  .about-contact i a {
+    margin-right: 10px;
+    color: #272a31;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .about-contact .fa-angle-right {
+    display: none;
+  }
+
+  .header .nav-bar .navigation.active {
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    background: #ec5242;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    list-style: none;
+  }
+
+  .header .nav-bar .navigation.show {
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    background: #ec5242;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    list-style: none;
+  }
+
+  .foot-right ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .header .nav-bar .navigation.active li {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .header .nav-bar .navigation.show li {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .foot-right ul li a {
+    text-decoration: none;
+    color: #272a31;
+    font-size: 11px;
+  }
+
+  .header .nav-bar .navigation.active li:first-child {
+    margin-top: 120px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+  }
+
+  .header .nav-bar .navigation.show li:first-child {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .header .nav-bar .navigation.active li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #272a31;
+  }
+
+  .header .nav-bar .navigation.show li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #272a31;
+  }
+
+  .toggle.active {
+    background: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 6%;
+  }
+
+  .menu.show {
+    background: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 6%;
+  }
+
+  .nav-bar.active,
+  .social-login.active {
+    display: block;
+  }
+
+  .nav-bar.show,
+  .social-login.show {
+    display: block;
+  }
+
+  .main-title h1 {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #ec5242, red);
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .main-title h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 2rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 15px;
+  }
+
+  .main-description {
+    border: 5px solid gainsboro;
+    margin-top: 35px;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.3rem;
+    color: #272a31;
+  }
+
+  .main-description p {
+    font-size: 18px;
+    line-height: 1.7rem;
+    width: 100%;
+  }
+
+  .main-address {
+    margin-top: 30px;
+    line-height: 1.5em;
+  }
+
+  .main-address p {
+    color: #272a31;
+    font-size: 12px;
+    margin-bottom: 15%;
+  }
+
+  .main-address h3 {
+    font-weight: 700;
+    color: #272a31;
+    font-size: 20px;
+  }
+
+  .main-services {
+    background: #272a31;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+
+  .main-services h3 {
+    padding-top: 30px;
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .title::after {
+    background: #ec5242;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border-radius: 15px;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+  }
+
+  .services img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  .services .service-1,
+  .services .service-2,
+  .services .service-3,
+  .services .service-4,
+  .services .service-5 {
+    text-align: center;
+    background: #4646475b;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-services .container {
+    width: 92%;
+    margin: auto;
+  }
+
+  .product-info p {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  .about-main-mobile-title p {
+    display: block;
+  }
+
+  .about-log-section p {
+    color: #272a31;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    line-height: 1.6em;
+    font-size: 20px;
+  }
+
+  .about-contact p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    font-size: 18px;
+  }
+
+  .see-past-sold-itemes p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  .services .service-1 p,
+  .services .service-2 p,
+  .services .service-3 p,
+  .services .service-4 p,
+  .services .service-5 p {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5em;
+    width: 100%;
+  }
+
+  .services h3 {
+    color: #ec5242;
+    width: 50%;
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .main-services .see-whole-products {
+    border: none;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fa2e18;
+    padding: 20px;
+    width: 80%;
+  }
+
+  #featured-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .featured-products .title {
+    color: #272a31;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+  }
+
+  #featured-products hr {
+    width: 40px;
+    margin: 5px;
+  }
+
+  #featured-products .position {
+    color: #ec5242;
+    font-size: 16px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer-home-mobile {
+    display: none;
+  }
+
+  .flex-div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  .flex-div img {
+    width: 120px;
+    height: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .flex-div .flex-images {
+    background-image: url('../images/bgforimages2.png');
+    background-position: top 1% left 2%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+  }
+
+  .product-info h3 {
+    color: #272a31;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .product-info {
+    margin-left: 20px;
+  }
+
+  .featured-products .container {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .more-btn-container {
+    background-color: #fff;
+    border: 2px solid darkgray;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .more-btn-container .fa {
+    font-size: 60px;
+    color: #fa2e18;
+    margin-left: 20px;
+  }
+
+  .more-btn-container .show-more-text {
+    font-size: 20px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  #featured-products.show-hide .read-more {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  /* -----about mobile version css----- */
+  .nav-below-header {
+    display: none;
+  }
+
+  .about-main {
+    /* background-image: url('../images/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    background-color: #d3d3d3;
+  }
+
+  .about-main-mobile-title {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #fa2e18;
+  }
+
+  .about-main-title {
+    margin-top: 10px;
+  }
+
+  .about-main-title h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 2rem;
+    background-image: url('../images/pexels-pixabay-73873.jpg');
+    background-size: cover;
+    /* stylelint-disable-next-line csstree/validator */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 100%;
+  }
+
+  .about-main .title {
+    display: none;
+  }
+
+  .about-message {
+    border: 5px solid gainsboro;
+    margin-top: 50px;
+    padding: 20px 10px;
+    width: 100%;
+    line-height: 1.8rem;
+    color: #272a31;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+
+  .about-contact {
+    margin-top: 30px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-log-section .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 25px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 15px;
+  }
+
+  .about-log-section .container {
+    width: 80%;
+  }
+
+  .container-log {
+    width: 85%;
+    margin: auto;
+  }
+
+  .about-log {
+    margin: 60px auto;
+    width: 100%;
+    border: 1px solid darkgray;
+    background-color: #fff;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  .about-log .logo-on-about {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .see-past-sold-itemes .title {
+    margin-top: 30px;
+    color: #272a31;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px;
+  }
+
+  .past-itmes-cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .past-itmes-cards .card-1,
+  .past-itmes-cards .card-2 {
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  .foot-left img {
+    width: 105px;
+    height: 90px;
+  }
+
+  .past-itmes-cards .card-1 img,
+  .past-itmes-cards .card-2 img {
+    width: 100%;
+    display: block;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(226, 15, 0, 0.733);
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+  .layer h3 {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+
+  .partners .brandsLogo {
+    display: block;
+  }
+
+  .prodContainer .container .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .prodContainer .container .row-2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-brandsLogo {
+    margin-bottom: 35px;
+    background: #272a31;
+    min-width: 100%;
+    height: 300px;
+  }
+
+  .prodContainer .title {
+    font-size: 25px;
+    padding-top: 25px;
+    margin-left: 50px;
+  }
+
+  .brandsLogo .col-5 {
+    width: 150px;
+  }
+
+  .col-5 img:hover {
+    filter: grayscale(0);
+  }
+
+  .foot-about-mobile .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 85%;
+  }
+
+  .foot-about-mobile {
+    min-height: 160px;
+  }
+
+  .foot-left {
+    padding-bottom: 100px;
+    flex: 1;
+    flex-basis: 25%;
+  }
+
+  .foot-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .foot-right ul .privacy {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .foot-right {
+    flex: 2;
+    margin-top: 10px;
+    flex-basis: 75%;
+  }
+
+  .foot-right h4 {
+    font-weight: normal;
+    font-size: 10px;
+    width: 100%;
+    line-height: 2em;
+  }
+
+  .about-partners .prodContainer .title {
+    margin-bottom: 10px;
+  }
+
+  .footer-about {
+    display: none;
+  }
+}
