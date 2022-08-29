@@ -13,8 +13,7 @@
 - HTML, CSS and Javascript Linters
 - [follow this link to see the video description](https://www.loom.com/share/de1dbbff27ff4cb8afa8cd778a97b573)
 ## Screenshot
-![home page](/assets/images/home.png?raw=true "home screenshot")
-![about page](/assets/images/about.png?raw=true "about screenshot")
+![mockup page](/assets/images/yaycommerc.png?raw=true "mock screenshot")
 ## Live Demo
 
 [Live Demo Link](https://yayner2002.github.io/yayEcommerce/)
